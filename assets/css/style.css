@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -54,6 +54,25 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.neon {
+  color: #cce7f8;
+  font-size: 10.5rem;
+  -webkit-animation: shining 0.5s alternate infinite;
+  animation: shining 0.5s alternate infinite;
+}
+@-webkit-keyframes shining{
+  from {
+      text-shadow: 0 0 100px lightblue, 0 0 200px rgb(151, 192, 206), 0 0 300px lightblue, 0 0 400px skyblue, 0 0 500px skyblue, 0 0 600px skyblue;
+  }
+
+  to {
+      text-shadow: 0 0 50px lightblue, 0 0 100px lightblue, 0 0 150px lightblue, 0 0 200px skyblue, 0 0 250px skyblue, 0 0 300px skyblue;
+  }
+}
+
+
+
+
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
